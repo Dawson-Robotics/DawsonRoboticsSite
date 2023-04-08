@@ -7,10 +7,10 @@ var mobileLogoPopUp = document.getElementById("mobileLogo");
 var quickLinks = document.getElementById("quickLinks");
 var footerSite = document.getElementsByTagName("footer")[0];
 
-const gearNavi = '<nav class="gear"><img src="../assets/images/gears/gear.png"></nav>';
-const roboticsLogo = '<a href="../" class="logo"><img src="../assets/images/logos/DawsonRoboticsLogoGray.png" class="logo"></a>';
-const roboticsLogoMobile = '<img src="../assets/images/logos/DawsonRoboticsLogo.png" class="homePageLogo">';
-const smallRoboticsLogo = '<img class="smallLogo" src="../assets/images/logos/DawsonRoboticsSmallLogoBlueFill.png">'
+const gearNavi = '<nav class="gear"><img src="../DawsonRoboticsSite/assets/images/gears/gear.png"></nav>';
+const roboticsLogo = '<a href="../DawsonRoboticsSite/" class="logo"><img src="../DawsonRoboticsSite/assets/images/logos/DawsonRoboticsLogoGray.png" class="logo"></a>';
+const roboticsLogoMobile = '<img src="../DawsonRoboticsSite/assets/images/logos/DawsonRoboticsLogo.png" class="homePageLogo">';
+const smallRoboticsLogo = '<img class="smallLogo" src="../DawsonRoboticsSite/assets/images/logos/DawsonRoboticsSmallLogoBlueFill.png">'
 const slideshowCode = '<div id="news"></div>';
 const date = new Date();
 year = date.getFullYear();
@@ -22,12 +22,12 @@ const slideSponsorsShow = `
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 2</div>
-            <img src="../assets/images/logos/SpaceLogo.png" style="height:15vh;max-width:100%;">
+            <img src="../DawsonRoboticsSite/assets/images/logos/SpaceLogo.png" style="height:15vh;max-width:100%;">
             <div class="text"><a href="https://space.dawsoncollege.qc.ca">SPACE</a></div>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">2 / 2</div>
-            <img src="../assets/images/logos/Dawson_En_Logo_White_RGB.svg" style="height:20vh;width:100%">
+            <img src="../DawsonRoboticsSite/assets/images/logos/Dawson_En_Logo_White_RGB.svg" style="height:20vh;width:100%">
             <div class="text"><a href="https://www.dawsoncollege.qc.ca">Dawson College</a></div>
         </div>
     </div>
@@ -49,7 +49,7 @@ function slideshowing() {
     
     var news = document.getElementById("news");
 
-    news.innerHTML = '<img src="../assets/images/roboticsTeamFirst.jpg"><h2>Latest News</h2><h3>Dawson Robotics wins 1st place overall!</h3><ul>February 18th, 2023</ul>'
+    news.innerHTML = '<img src="../DawsonRoboticsSite/assets/images/roboticsTeamFirst.jpg"><h2>Latest News</h2><h3>Dawson Robotics wins 1st place overall!</h3><ul>February 18th, 2023</ul>'
 }
 
 function mobileLogo() {
