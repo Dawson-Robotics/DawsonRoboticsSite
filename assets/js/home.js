@@ -13,26 +13,8 @@ const roboticsLogoMobile = '<img src="'+baseurl+'assets/images/logos/DawsonRobot
 const smallRoboticsLogo = '<img class="smallLogo" src="'+baseurl+'assets/images/logos/DawsonRoboticsSmallLogoBlueFill.png">'
 const slideshowCode = '<div id="news"></div>';
 const date = new Date();
-year = date.getFullYear();
 
-const slideSponsorsShow = `
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 2</div>
-            <img src="../DawsonRoboticsSite/assets/images/logos/SpaceLogo.png" style="height:15vh;max-width:100%;">
-            <div class="text"><a href="https://space.dawsoncollege.qc.ca">SPACE</a></div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 2</div>
-            <img src="../DawsonRoboticsSite/assets/images/logos/Dawson_En_Logo_White_RGB.svg" style="height:20vh;width:100%">
-            <div class="text"><a href="https://www.dawsoncollege.qc.ca">Dawson College</a></div>
-        </div>
-    </div>
-    <br>
-`;
+var year = date.getFullYear();
 
 function headering() {
     headChange.innerHTML = '<header class="desktopHeader">'+roboticsLogo+'<div id="gearNav"></div>'+smallRoboticsLogo+'</header>';
@@ -75,26 +57,4 @@ mobileLogo();
 quickLinkSection();
 footerForm();
 sponsorShow();
-
-/* window.addEventListener('resize', function(event) {
-    if (gearNavigation.width >= 600) {
-        gearNavigation
-    }
-
-} */
-
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 

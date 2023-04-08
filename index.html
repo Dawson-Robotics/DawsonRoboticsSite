@@ -3,10 +3,19 @@
         <title>Dawson Robotics</title>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Adjustable linking -->
         <script>
             const baseurl = window.location.pathname;
-            document.write('<link rel="stylesheet" href="'+baseurl+'assets/css/style.css">');       
+            var script = document.createElement("script");
+            script.src = baseurl+"assets/js/home.js";
         </script>
+
+        <!-- CSS calling -->
+        <script>
+            document.write('<link rel="stylesheet" href="'+baseurl+'assets/css/style.css">');
+        </script>
+
     </head>
     <body>
         <div id="contentThemeSelection">
@@ -22,10 +31,15 @@
                     </div>
                     <div id="quickLinks"></div>
                 </section>
-                <!-- <div id="sponsorSlideshow"></div> -->
             </div>
             <footer></footer>
-            <script src="/DawsonRoboticsSite/assets/js/home.js"></script>
         </div>
+
+        <!-- Javascript calling -->
+        <script>
+            var body = document.getElementsByTagName("body")[0];
+            body.appendChild(script);
+        </script>
+
     </body>
 </html>
