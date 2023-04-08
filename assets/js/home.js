@@ -7,10 +7,10 @@ var mobileLogoPopUp = document.getElementById("mobileLogo");
 var quickLinks = document.getElementById("quickLinks");
 var footerSite = document.getElementsByTagName("footer")[0];
 
-const gearNavi = '<nav class="gear"><img src="../DawsonRoboticsSite/assets/images/gears/gear.png"></nav>';
-const roboticsLogo = '<a href="../DawsonRoboticsSite/" class="logo"><img src="../DawsonRoboticsSite/assets/images/logos/DawsonRoboticsLogoGray.png" class="logo"></a>';
-const roboticsLogoMobile = '<img src="../DawsonRoboticsSite/assets/images/logos/DawsonRoboticsLogo.png" class="homePageLogo">';
-const smallRoboticsLogo = '<img class="smallLogo" src="../DawsonRoboticsSite/assets/images/logos/DawsonRoboticsSmallLogoBlueFill.png">'
+const gearNavi = '<nav class="gear"><img src="'+baseurl+'assets/images/gears/gear.png"></nav>';
+const roboticsLogo = '<a href="'+baseurl+'" class="logo"><img src="'+baseurl+'assets/images/logos/DawsonRoboticsLogoGray.png" class="logo"></a>';
+const roboticsLogoMobile = '<img src="'+baseurl+'assets/images/logos/DawsonRoboticsLogo.png" class="homePageLogo">';
+const smallRoboticsLogo = '<img class="smallLogo" src="'+baseurl+'assets/images/logos/DawsonRoboticsSmallLogoBlueFill.png">'
 const slideshowCode = '<div id="news"></div>';
 const date = new Date();
 year = date.getFullYear();
@@ -49,7 +49,7 @@ function slideshowing() {
     
     var news = document.getElementById("news");
 
-    news.innerHTML = '<img src="../DawsonRoboticsSite/assets/images/roboticsTeamFirst.jpg"><h2>Latest News</h2><h3>Dawson Robotics wins 1st place overall!</h3><ul>February 18th, 2023</ul>'
+    news.innerHTML = '<img src="'+baseurl+'assets/images/roboticsTeamFirst.jpg"><h2>Latest News</h2><h3>Dawson Robotics wins 1st place overall!</h3><ul>February 18th, 2023</ul>'
 }
 
 function mobileLogo() {
