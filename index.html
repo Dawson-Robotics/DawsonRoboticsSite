@@ -2,8 +2,11 @@
     <head>
         <title>Dawson Robotics</title>
         <meta charset="UTF-8"> 
-        <link rel="stylesheet" href="../DawsonRoboticsSite/assets/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            const baseurl = window.location.pathname;
+            document.write('<link rel="stylesheet" href="'+baseurl+'assets/css/style.css">');       
+        </script>
     </head>
     <body>
         <div id="contentThemeSelection">
@@ -22,7 +25,7 @@
                 <!-- <div id="sponsorSlideshow"></div> -->
             </div>
             <footer></footer>
+            <script src="/assets/js/home.js"></script>
         </div>
-        <script src="../DawsonRoboticsSite/assets/js/home.js"></script>
     </body>
 </html>
