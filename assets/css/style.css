@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap');
+
+p, h1, h2, h3, h4, h5, h6, a, ul, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1vw;
+}
+
+h1 {
+    font-size: 3.2vh;
+}
+
+h2 {
+    font-size: 2.84vh;
+}
+
+h3 {
+    font-size: 2.49vh;
+}
+
+h4 {
+    font-size: 2.13vh;
+}
+ 
+h5 {
+    font-size: 1.96vh;
+}
+ 
+h6 {
+    font-size: 1.78vh;
+}
+ 
+ul {
+    font-size: 1.78vh;
+}
+
+.links {
+    color: #0055B7;
+    text-decoration: none;
+    font-size: 2.49vh;
+}
+
+.links:hover {
+    color: white;
+    background-color: #0055B7;
+}
+
+article {
+    position: relative;
+    background-color: #78C475;
+    width: 30%;
+    max-width: 800px;
+    left: 0;
+    right: 0;
+    float: left;
+    margin: 0 2vw;
+    padding: 1em;
+    border-radius: 5%;
+    animation: leftMoves 1.5s;
+}
+
+article img {
+    width: 100%;
+    position: relative;
+    border-radius: 5%;
+}
+
+#content {
+    width: 60%;
+    max-width: 1500px;
+    position: relative;
+    float: right;
+    background-color: #c4c175;
+    padding: 0vw 2vw;
+    margin-right: 2vw;
+    border-radius: 5%;
+    animation: rightMoves 1.5s 1;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#contentThemeSelection {
+    width: 100%;
+}
+
+.logo {
+    display: block;
+    width: 15%;
+    max-width: 300px;
+    padding: 1vw;
+}
+
+.logo img {
+    filter: brightness(0) invert(1);
+    width: 100%;
+}
+
+.desktopHeader {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7.55vw;
+    z-index: 2;
+    background-color: #0055B7;
+    animation: topMoves 1s 1;
+}
+
+#gearNav {
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top:0;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 40%;
+    animation: topMoves 2s 1;
+}
+
+.gear img {
+    float: right;
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+    object-position: 50% 100%;
+}
+
+#main {
+    padding-top: 11vw;
+    top: 0;
+    width: 100%;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.smallLogo {
+    width: 10vh;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.homePageLogo {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    padding: 1vh;
+    height: 5vw;
+    background-color: #0055B7;
+    margin-top: 1em;
+    bottom: 0;
+}
+
+#sponsorSlideshow {
+    width: 100%;
+}
+
+#quickLinks {
+    margin-bottom: 2em;
+    width: 30%;
+}
+
+@keyframes rightMoves {
+    from {left:100vw;}
+    to {left:0px;}
+}
+
+@keyframes topMoves {
+    from {top: -20vh;}
+    to {top: 0;}    
+}
+
+@keyframes leftMoves {
+    from {left:-100vw;}
+    to {left:0;}
+}
+
+@media screen and (max-width: 1000px) {
+    p {
+        font-size:small;
+    }
+    
+    h1 {
+        font-size:larger;
+    }
+    
+    h2 {
+        font-size:large;
+    }
+    
+    h3 {
+        font-size:medium;
+    }
+    
+    h4 {
+        font-size:small;
+    }
+     
+    h5 {
+        font-size:small;
+    }
+     
+    h6 {
+        font-size:small;
+    }
+     
+    ul {
+        font-size:small;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .smallLogo {
+        display: none;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+    .desktopHeader {
+        position: fixed;
+    }
+
+    #gearNav {
+        position: sticky;
+        width: 100%;
+        height: 15vh;
+        left: 0;
+        top:0;
+    }
+
+    .gear img {
+        width: 100%;
+        height: 90%;
+    }
+
+    article {
+        float: none;
+        width: 90%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    article img {
+        width: 100%;
+        margin: auto;
+    }
+
+    #content {
+        float: none;
+        width: 90%;
+        max-width: 600px;
+        margin-top: 1vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #main {
+        margin-top: 10vh;
+        float: none;
+        width: 100%;
+        padding-bottom: 15vh;
+        padding-top: 5vh;
+    }
+
+    .homePageLogo {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    #quickLinks {
+        width:100%;
+    }
+
+    footer {
+        display: block;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 2em;
+        background-color: #0055B7;
+    }
+}
+
+@media screen and (min-width: 2560px){
+    #main {
+        width: 70%;
+        margin: auto;
+    }
+
+    article {
+        float: left;
+        width: 30%;
+        margin: auto;
+    }
+
+    article img {
+        width: 100%;
+        margin: auto;
+    }
+
+    #content {
+        float: right;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    footer {
+        height: 5vw;
+        padding: 0;
+    }
+    
+    .logo {
+        position: relative;
+        max-width: 15%;
+        padding: 1.5em;
+        filter: brightness(0) invert(1);
+    }
+
+}
+
+
+
+/* stuff */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 50%;
+    height: 10vh;
+    position: relative;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Caption text */
+.text {
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/2 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
