@@ -1,0 +1,46 @@
+<html lang="fr">
+    <head>
+        <title>Dawson Robotics</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Adjustable linking -->
+        <script>
+            const baseurl = window.location.pathname;
+            var script = document.createElement("script");
+            script.src = "../assets/js/home.js";
+        </script>
+
+        <!-- CSS calling -->
+        <script>
+            document.write('<link rel="stylesheet" href="../assets/css/style.css">');
+        </script>
+
+    </head>
+    <body>
+        <div id="contentThemeSelection">
+            <div id="headerDesktop"></div>
+            <div id="main">
+                <div id="mobileLogo"></div>
+                <article id="homeSlides"></article>
+                <section id="content">
+                    <h1>Bienvenue au Robotiques Dawson!</h1>
+                    <div id="info">
+                        <h3>Pour plus d'informations sur le concours de robotique auquel nous participons, visitez: <br><a href="https://www.robo-crc.ca/fr/" class="links">www.robo-crc.ca/fr/</a></h3>
+                        <h3>Pour de plus amples renseignements sur le certificat SPACE au Collège Dawson, visitez :<br><a href="https://space.dawsoncollege.qc.ca" class="links">space.dawsoncollege.qc.ca (anglais seulement)</a></h3>
+                    </div>
+                    <div id="quickLinks"></div>
+                </section>
+            </div>
+            <footer></footer>
+            <div id="loadingCover"></div>
+        </div>
+
+        <!-- Javascript calling -->
+        <script>
+            var body = document.getElementsByTagName("body")[0];
+            body.appendChild(script);
+        </script>
+
+    </body>
+</html>

@@ -49,9 +49,9 @@ ul {
 
 article {
     position: relative;
-    background-color: #78C475;
+    background-color: #018ABD;
+    color: white;
     width: 30%;
-    max-width: 800px;
     left: 0;
     right: 0;
     float: left;
@@ -68,11 +68,10 @@ article img {
 }
 
 #content {
-    width: 60%;
-    max-width: 1500px;
+    width: 52%;
     position: relative;
     float: right;
-    background-color: #c4c175;
+    background-color: #97CBDC;
     padding: 0vw 2vw;
     margin-right: 2vw;
     border-radius: 5%;
@@ -82,6 +81,7 @@ article img {
 body {
     margin: 0;
     overflow-x: hidden;
+    background-color: #DDE8F0;
 }
 
 #contentThemeSelection {
@@ -90,8 +90,10 @@ body {
 
 .logo {
     display: block;
-    width: 15%;
-    padding: 1vw;
+    width: 15vw;
+    margin-left: auto;
+    margin-right: 82.5vw;
+    margin-top: 2.5vh;
 }
 
 .logo img {
@@ -118,6 +120,7 @@ body {
     margin-left: auto; 
     margin-right: auto;
     width: 40%;
+    filter: brightness(0) invert(0.7) hue-rotate(180deg);
     animation: topMoves 2s 1;
 }
 
@@ -132,9 +135,9 @@ body {
 #main {
     padding-top: 11vw;
     top: 0;
-    width: 100%;
-    padding-left: 7.5vw;
-    padding-right: 7.5vw;
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -142,12 +145,40 @@ body {
     overflow-y: visible;
 }
 
-.smallLogo {
-    width: 10vh;
-    float: right;
+#settings {
     position: absolute;
+    float: right;
     top: 0;
     right: 0;
+}
+
+.dropdown {
+    display: none;
+    height: 10vh;
+    width: 10vw;
+    background-color: #001B48;
+    position: fixed;
+    right: 1vw;
+    border-radius: 10%;
+}
+
+.dropdown a {
+    position: relative;
+    color: white;
+    display: block;
+    margin-top: 15%;
+    padding-bottom: 15%;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+.dropdown a:hover {
+    background-color: white;
+    color: #001B48;
+}
+
+.smallLogo {
+    width: 10vh;
 }
 
 .homePageLogo {
@@ -189,8 +220,9 @@ footer {
 }
 
 #loadingCover img {
-    width: 100%;
+    width: 50vh;
     animation: spinClockwise 2s infinite linear;
+    filter: brightness(0) invert(0.7) hue-rotate(180deg);
 }
 
 #sponsorSlideshow {
@@ -295,23 +327,10 @@ footer {
         font-size: 1em;
     }
 
-    .desktopHeader {
-        height: 10vw;
-    }
-
-    .logo {
-        width: 25%;
-    }
-    
-    .logo img {
-        filter: brightness(0) invert(1);
-        width: 100%;
-    }
-
     article {
         float: none;
         width: 90%;
-        max-width: 600px;
+        max-width: 400px;
         margin: auto;
     }
 
@@ -323,7 +342,7 @@ footer {
     #content {
         float: none;
         width: 90%;
-        max-width: 600px;
+        max-width: 400px;
         margin-top: 1vw;
         margin-left: auto;
         margin-right: auto;
@@ -350,12 +369,11 @@ footer {
 
 @media screen and (min-width: 2560px){
     #main {
-        width: 70%;
-        margin: auto;
+        width: 2300px;
         margin-bottom: 10vw;
     }
 
-    article {
+    /* article {
         float: left;
         width: 30%;
         margin: auto;
@@ -386,8 +404,9 @@ footer {
         padding: 1.5em;
         filter: brightness(0) invert(1);
     }
-
+*/
 }
+
 
 
 
