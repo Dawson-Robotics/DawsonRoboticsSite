@@ -15,7 +15,7 @@ var year = date.getFullYear();
 // Assets
 
 var gearNavi = '<nav class="gear"><img src="'+baseurl+'assets/images/gears/gear.png"></nav>';
-var dropdown1 = '<div class="dropdown"><a href="/fr/">Français</a><div>';
+var dropdown1 = '<div class="dropdown"><a href="'+baseurl+'/fr/">Français</a><div>';
 var spinnieGear = '<img src="'+baseurl+'assets/images/gears/gear.png">';
 var roboticsLogo = '<a href="'+baseurl+'" class="logo"><img src="'+baseurl+'assets/images/logos/DawsonRoboticsLogoGray.png" class="logo"></a>';
 var roboticsLogoMobile = '<img src="'+baseurl+'assets/images/logos/DawsonRoboticsLogo.png" class="homePageLogo">';
@@ -23,11 +23,11 @@ var smallRoboticsLogo = '<img class="smallLogo" src="'+baseurl+'assets/images/lo
 var slideshowCode = '<div id="news"></div>';
 
 if (lang=="fr") {
-    gearNavi = '<nav class="gear"><img src="../../assets/images/gears/gear.png"></nav>';
-    dropdown1 = '<div class="dropdown"><a href="../../">English</a><div>';
-    spinnieGear = '<img src="../../assets/images/gears/gear.png">';
-    roboticsLogo = '<a href="/fr/" class="logo"><img src="../../assets/images/logos/DawsonRoboticsLogoGray.png" class="logo"></a>';
-    roboticsLogoMobile = '<img src="../../assets/images/logos/DawsonRoboticsLogo.png" class="homePageLogo">';
+    gearNavi = '<nav class="gear"><img src="../assets/images/gears/gear.png"></nav>';
+    dropdown1 = '<div class="dropdown"><a href="../">English</a><div>';
+    spinnieGear = '<img src="../assets/images/gears/gear.png">';
+    roboticsLogo = '<a href="../fr/" class="logo"><img src="../assets/images/logos/DawsonRoboticsLogoGray.png" class="logo"></a>';
+    roboticsLogoMobile = '<img src="../assets/images/logos/DawsonRoboticsLogo.png" class="homePageLogo">';
     smallRoboticsLogo = '<img class="smallLogo" src="../assets/images/logos/DawsonRoboticsSmallLogoBlueFill.png">'+dropdown1;
     slideshowCode = '<div id="news"></div>';
 }
